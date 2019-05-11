@@ -33,7 +33,7 @@ try {
     $queryType = new ObjectType([
         'name' => 'Query',
         'fields' => [
-            'authUser' => [
+            'autenticar' => [
                 'type' => Type::string(),
                 'args' => [
                     'usuario' => ['type' => Type::string()],
@@ -80,7 +80,7 @@ try {
     $mutationType = new ObjectType([
         'name' => 'Mutation',
         'fields' => [
-            'postUser' => [
+            'crearUsuario' => [
                 'type' => Type::string(),
                 'args' => [
                     'usuario' => ['type' => Type::string()],
@@ -109,7 +109,7 @@ try {
                     }
                 },
             ],
-            'logOut' => [
+            'salir' => [
                 'type' => Type::string(),
                 'args' => [
                     'usuario' => ['type' => Type::string()]
@@ -134,7 +134,7 @@ try {
                     }
                 },
             ],
-            'updateUser' => [
+            'actualizarUsuario' => [
                 'type' => Type::string(),
                 'args' => [
                     'usuario' => ['type' => Type::string()],
