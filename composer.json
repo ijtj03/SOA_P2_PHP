@@ -1,0 +1,13 @@
+{
+    "name": "nabetse28/soa_php-graphql",
+    "require": {
+        "webonyx/graphql-php": "^0.13.1",
+        "firebase/php-jwt": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "nabetse28",
+            "email": "nabetse.hv.09@gmail.com"
+        }
+    ]
+}
