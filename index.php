@@ -21,7 +21,7 @@ use GraphQL\GraphQL;
 use \Firebase\JWT\JWT;
 
 // Connect to mysql
-$conn = new mysqli("192.168.100.87", "ijtj03", "1234", "comprassoa", 3306);
+$conn = new mysqli("192.168.100.52", "ijtj03", "1234", "comprassoa", 3306);
 
 // Database connection verification
 if($conn->connect_errno) {
