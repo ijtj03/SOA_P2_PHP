@@ -1,9 +1,7 @@
 <?php
 // Test this using following command
 // php -S localhost:8080 ./index.php &
-// curl http://localhost:8080 -d '{"query": "query { authUser(usuario: \"Fofo\", contrasena: \"123\") }" }' &
-// curl http://localhost:8080 -d '{"query": "query { postUser(usuario: \"Fofo\", contrasena: \"123\") }" }' &
-// curl http://localhost:8080 -d '{"query": "query { updateUser(usuario: \"Fofo\", contrasena: \"123\") }" }'
+
 
 // Project requirements
 require_once __DIR__ . '/vendor/autoload.php';
@@ -21,7 +19,7 @@ use GraphQL\GraphQL;
 use \Firebase\JWT\JWT;
 
 // Connect to mysql
-$conn = new mysqli("192.168.1.52", "ijtj03", "1234", "comprassoa", 3306);
+$conn = new mysqli("172.20.10.4 ", "ijtj03", "1234", "comprassoa", 3306);
 
 // Database connection verification
 if($conn->connect_errno) {
